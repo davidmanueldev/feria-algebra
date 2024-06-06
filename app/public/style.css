@@ -1,0 +1,66 @@
+html {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#c51ff455, #c51ff4);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    font-size: larger;
+}
+
+.form-container {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form+p, form p {
+    text-align: center;
+}
+
+input,
+button {
+    border-radius: 4px;
+    border: unset;
+    padding: 15px 30px;
+    font-size: larger;
+}
+
+button{
+    background-color: #c51ff4;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.error{
+    color: red;
+}
+
+.oculto{
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    /* clip: rect(0, 0, 0, 0);
+    border: 0; */
+}

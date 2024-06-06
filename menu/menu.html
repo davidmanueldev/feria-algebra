@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Desplegable</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="list">
+            <li class="list__item">
+                <div class="list__button" data-image="imagesMenu/inicioImagen.jpg">
+                    <img src="assets/dashboard.svg" class="list__img">
+                    <a href="#" class="nav__link">Inicio</a>
+                </div>
+            </li>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click" data-image="imagesMenu\animalMenu.png">
+                    <img src="assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Animals</a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="Ahorcado animals.html" class="nav__link nav__link--inside" data-image="imagesMenu\hangmansGame.jpeg">Hangman Game</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="Animals.html" class="nav__link nav__link--inside" data-image="imagesMenu\guessAnimal.png">Guess that animal</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list__item">
+                <div class="list__button" data-image="imagesMenu\youtubeIcon.png">
+                    <img src="assets/stats.svg" class="list__img">
+                    <a href="Videos.html" class="nav__link">Videos</a>
+                </div>
+            </li>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click" data-image="imagesMenu\habilidadesMenu.jpg">
+                    <img src="assets/bell.svg" class="list__img">
+                    <a href="#" class="nav__link">Ability Games</a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="EnlacePalabras.html" class="nav__link nav__link--inside" data-image="imagesMenu\linkWord.png">Word link</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="Memoria.html" class="nav__link nav__link--inside" data-image="imagesMenu\memoryGame.jpeg">Memory</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="Numbers.html" class="nav__link nav__link--inside" data-image="imagesMenu\guessNumber.jpeg">Guess the number</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="Voces.html" class="nav__link nav__link--inside" data-image="imagesMenu\guessNumber.jpeg">Listening Game</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="list__item">
+                <div class="list__button" data-image="imagesMenu/image11.png">
+                    <img src="assets/message.svg" class="list__img">
+                    <a href="#" class="nav__link">Developers</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="imageContainer">
+        <img id="displayImage" src="imagesMenu/inicioImagen.jpg" alt="Imagen del menú desplegable">
+    </div>    
+    <script src="main.js"></script>
+</body>
+</html>
